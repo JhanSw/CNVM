@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block titulo %} Gestión usuarios{% endblock %}
+
+{% block contenido %} 
+    <div class="card">
+        <div class="card-header">
+            <a name="" id="" class="btn btn-success" href="{% url 'crear' %}" role="button">Agregar nuevo usuario</a>
+        </div>
+        <div class="card-body">
+            <h4 class="card-title">Usuarios</h4>
+            <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">NIT</th>
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Direccion</th>
+                            <th scope="col">Telefono</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>11486521-3</td>
+                            <td>Ferreterias y asociados</td>
+                            <td>Av. del Rio 25-155</td>
+                            <td>3178554789</td>
+                            <td>ferreterias@asociados.co</td>
+                            <td>Editar | Borrar </td>
+
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            
+        </div>
+        <div class="card-footer text-muted">
+            Footer
+        </div>
+    </div>
+{% endblock %}
+    
